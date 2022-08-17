@@ -1,19 +1,18 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Linda's Produce</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body id="container">
+  <head>
+    <meta charset="UTF-8">
+    <title>Linda's Produce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+  </head>
 
-
+  <body id="container">
     <!-- Header & Navigation -->
     <div class="absolute w-full bg-slate-100 pb-4">
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl py-2 px-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             <div class="flex flex-row items-center justify-between lg:justify-start">
-                <a href="./index.html" class="text-lg lg:text-2xl pr-2 font-bold tracking-tighter text-teal-800 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8 border-r-2 border-teal-800"> Linda's Produce </a>
+                <a href="index.html" class="text-lg lg:text-2xl pr-2 font-bold font-serif tracking-tighter text-teal-800 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8 border-r-2 border-teal-800"> Linda's Produce </a>
                 <p id="open-now" class="px-4 font-medium text-rose-700 animate-pulse"></p>
                 <button id="toggle" class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
@@ -29,10 +28,10 @@
                   <a class="block p-5 hover:underline hover:underline-offset-4 decoration-double decoration-amber-500" href="#">Home</a>
                 </li> 
                 <li> 
-                  <a class="block p-5 hover:underline hover:underline-offset-4 decoration-double decoration-amber-500" href="#">About</a>
+                  <a class="block p-5 hover:underline hover:underline-offset-4 decoration-double decoration-amber-500" href="about.html">About</a>
                 </li> 
                 <li> 
-                  <a class="block p-5 hover:underline hover:underline-offset-4 decoration-double decoration-amber-500" href="#">Contact</a>
+                  <a class="block p-5 hover:underline hover:underline-offset-4 decoration-double decoration-amber-500" href="#contact">Contact</a>
                 </li> 
                 <li class="relative"> 
                   <div class="">
@@ -45,13 +44,12 @@
                     </button>
                   </div>
                   <div id="dropdown-menu" class="hidden absolute bg-teal-800 rounded-lg p-4  w-48 right-0 shadow-none md:shadow-2xl">
-                    <a href="#" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Produce</a>
-                    <a href="#" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Jar Goods + Deli</a>
-                    <a href="#" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Flowers + Garden</a>
+                    <a href="produce.html" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Produce</a>
+                    <a href="#" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Canned Goods</a>
+                    <!-- <a href="#" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Flowers + Garden</a>
                     <a href="#" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Fruit Baskets</a>
-                    <a href="#" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Christmas Trees</a>
+                    <a href="#" class="block px-4 py-2 text-slate-100 hover:bg-slate-100 hover:text-teal-800">Christmas Trees</a> -->
                   </div>
-                  
                 </li> 
               </ul>
             </nav>
@@ -59,24 +57,24 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="bg-slate-100 pt-6">
+    <section class="bg-slate-100 h-100 pt-12 pb-24 px-2">
       <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
         <div class="flex flex-wrap items-center mx-auto max-w-7xl">
           <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
             <div>
-              <div class=" w-full max-w-lg">    
+              <div class=" w-full">    
                 <div class="">
                   <img class="mx-auto rounded-lg" alt="hero" src="img/7.png">
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+          <div class="flex flex-col md:items-start mt-12 mb-16 pb-12 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
             <span class="mb-8 text-xs font-bold tracking-widest text-teal-800 uppercase">Voted Chattanooga's Best</span>
-            <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Fresh Fruit, Veggies, Plants, & More</h1>
-            <p class="mb-8 text-base leading-relaxed text-left text-gray-500">Stop by either of our two locations to get amazing produce, local jams + jellies, and fresh deli items, all made right here in the Chattanooga area since 1992.</p>
+            <h1 class="mb-8 text-4xl font-bold font-serif leading-none tracking-tighter text-slate-800 md:text-4xl lg:text-5xl">Fresh Fruit, Veggies, Plants, & More</h1>
+            <p class="mb-8 text-base leading-relaxed text-left text-gray-600">Stop by either of our two locations to get amazing produce, local jams + jellies, and fresh deli items, all made right here in the Chattanooga area since 1992.</p>
             <div class="flex-col mt-0 lg:mt-6 max-w-7xl sm:flex">
-              <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
+              <div class="flex justify-center sm:items-center w-full max-w-2xl gap-2 mx-auto mt-6">
                 <div class="mt-3 rounded-lg sm:mt-0">
                   <a href="https://goo.gl/maps/Uwze9EBYoYavD1Hv9" target="_blank">
                     <button class="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-teal-800 lg:px-10 rounded-xl hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-800">
@@ -86,7 +84,7 @@
                 </div>
                 <div class="mt-3 rounded-lg sm:mt-0 sm:ml-3">
                   <a href="https://goo.gl/maps/nix3TqFXcgPoq7AE6" target="_blank">
-                    <button class="items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-teal-800 hover:bg-amber-500 hover:text-white transition duration-500 ease-in-out transform border-2 border-teal-800 hover:border-amber-400 shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-400">
+                    <button class="items-center block px-4 lg:px-8 py-3.5 text-base font-medium text-center text-teal-800 hover:bg-amber-500 hover:text-white transition duration-500 ease-in-out transform border-2 border-teal-800 hover:border-amber-400 shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-400">
                       East Ridge Location
                     </button>
                   </a> 
@@ -98,126 +96,131 @@
       </div>
     </section>
 
-<!-- Produce Gallery Cards-->
-<section class="bg-slate-100">
-  <div class="relative px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-    <div class="relative mx-auto w-5/6 max-w-5xl">
-      <div class="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
-          <div class="shrink">
-            <img class="object-cover w-full h-48 " src="img/watermelon.jpg" alt="watermelons">
-          </div>
-          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-            <div class="flex-1">
-              <a href="#" class="block mt-2">
-                <p class="text-xl font-semibold text-neutral-600">Juicy Watermelons</p>
-                <p class="mt-3 text-base text-gray-500">Nothing says summer like cracking open a giant watermelon and tasting that sweet juicy red center on a hot & sweaty day.</p>
-              </a>
+    <!-- Produce Gallery Cards-->
+    <section class="bg-slate-200">
+      <div class=" z-99 px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+        <div class=" mx-auto w-5/6 max-w-5xl">
+          <p class="text-center text-sm font-bold uppercase tracking-widest text-teal-800 mb-4 pt-8">Favorites</p>
+          <h1 class="mb-16 text-3xl font-bold font-serif leading-none tracking-loose text-slate-800 md:text-5xl lg:text-6xl text-center ">What We're Known For </h1>
+          <div class="grid max-w-lg gap-6 mx-auto lg:grid-cols-3 lg:max-w-none">
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
+              <div class="shrink">
+                <img class="object-cover w-full h-48 " src="img/watermelon.jpg" alt="watermelons">
+              </div>
+              <div class="flex flex-col justify-between flex-1 p-6 bg-white focus:ring-2 focus:ring-teal-700">
+                <div class="flex-1 ">
+                  <a href="#" class="block mt-2">
+                    <p class="text-xl font-semibold font-serif text-slate-800">Juicy Watermelons</p>
+                    <p class="mt-3 text-base text-gray-600 ">Nothing says summer like cracking open a giant watermelon and tasting that sweet juicy red center on a hot & sweaty day.</p>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
-          <div class="flex-shrink-0">
-            <img class="object-cover w-full h-48" src="img/homegrown-strawberries.jpeg" alt="strawberries">
-          </div>
-          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-            <div class="flex-1">
-              <a href="https://twitter.com/g_perales" class="block mt-2">
-                <p class="text-xl font-semibold text-neutral-600">Homegrown Strawberries</p>
-                <p class="mt-3 text-base text-gray-500">Plump & Juicy strawberries just perfect for eating, dipping, or adding to that fluffy shortcake with some cool whip on top.</p>
-              </a>
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
+              <div class="flex-shrink-0">
+                <img class="object-cover w-full h-48" src="img/homegrown-strawberries.jpeg" alt="strawberries">
+              </div>
+              <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                <div class="flex-1">
+                  <a href="https://twitter.com/g_perales" class="block mt-2">
+                    <p class="text-xl font-semibold font-serif text-slate-800">Homegrown Strawberries</p>
+                    <p class="mt-3 text-base text-gray-600">Plump & Juicy strawberries just perfect for eating, dipping, or adding to that fluffy shortcake with some cool whip on top.</p>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
-          <div class="flex-shrink-0">
-            <img class="object-cover w-full h-48" src="img/homegrown-produce.jpg" alt="produce">
-          </div>
-          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-            <div class="flex-1">
-              <a href="#" class="block mt-2">
-                <p class="text-xl font-semibold text-neutral-600">Local Produce</p>
-                <p class="mt-3 text-base text-gray-500">Our produce is fresh and grown locally so you know you are getting the best quality right to your table.</p>
-              </a>
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
+              <div class="flex-shrink-0">
+                <img class="object-cover w-full h-48" src="img/homegrown-produce.jpg" alt="produce">
+              </div>
+              <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                <div class="flex-1">
+                  <a href="#" class="block mt-2">
+                    <p class="text-xl font-semibold font-serif text-slate-800">Local Produce</p>
+                    <p class="mt-3 text-base text-gray-600">Our produce is fresh and grown locally so you know you are getting the best quality right to your table.</p>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
-          <div class="flex-shrink-0">
-            <img class="object-cover w-full h-48" src="img/fresh-flowers.jpg" alt="flowers">
-          </div>
-          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-            <div class="flex-1">
-              <a href="https://twitter.com/g_perales" class="block mt-2">
-                <p class="text-xl font-semibold text-neutral-600">Fresh Flowers</p>
-                <p class="mt-3 text-base text-gray-500">While you are getting some yummy produce, why not pick up some beautiful and always fresh flowers? They are sure to brighten up your kitchen and your mood.</p>
-              </a>
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
+              <div class="flex-shrink-0">
+                <img class="object-cover w-full h-48" src="img/fresh-flowers.jpg" alt="flowers">
+              </div>
+              <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                <div class="flex-1">
+                  <a href="https://twitter.com/g_perales" class="block mt-2">
+                    <p class="text-xl font-semibold font-serif text-slate-800">Fresh Flowers</p>
+                    <p class="mt-3 text-base text-gray-600">While you are getting some yummy produce, why not pick up some beautiful and always fresh flowers? They are sure to brighten up your kitchen and your mood.</p>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
-          <div class="flex-shrink-0">
-            <img class="object-cover w-full h-48" src="img/fall-apples.jpg" alt="apples">
-          </div>
-          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-            <div class="flex-1">
-              <a href="https://twitter.com/g_perales" class="block mt-2">
-                <p class="text-xl font-semibold text-neutral-600">Fall Apples</p>
-                <p class="mt-3 text-base text-gray-500">Once the weather starts to cool down, don't forget to stop by and pick up some deliciously crisp fall apples. Applie pie anyone?</p>
-              </a>
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
+              <div class="flex-shrink-0">
+                <img class="object-cover w-full h-48" src="img/fall-apples.jpg" alt="apples">
+              </div>
+              <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                <div class="flex-1">
+                  <a href="https://twitter.com/g_perales" class="block mt-2">
+                    <p class="text-xl font-semibold font-serif text-slate-800">Fall Apples</p>
+                    <p class="mt-3 text-base text-gray-600">Once the weather starts to cool down, don't forget to stop by and pick up some deliciously crisp fall apples. Applie pie anyone?</p>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
-          <div class="flex-shrink-0">
-            <img class="object-cover w-full h-48" src="img/tomatos.jpg" alt="apples">
-          </div>
-          <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-            <div class="flex-1">
-              <a href="https://twitter.com/g_perales" class="block mt-2">
-                <p class="text-xl font-semibold text-neutral-600">Vibrant Tomatoes</p>
-                <p class="mt-3 text-base text-gray-500">Our tomatoes are the best around, guaranteed to make any burger or sandwich better. Or sprinkle a little salt on top and eat it straight like my grandmother always did. Yum.</p>
-              </a>
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
+              <div class="flex-shrink-0">
+                <img class="object-cover w-full h-48" src="img/tomatos.jpg" alt="apples">
+              </div>
+              <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                <div class="flex-1">
+                  <a href="https://twitter.com/g_perales" class="block mt-2">
+                    <p class="text-xl font-semibold font-serif text-slate-800">Vibrant Tomatoes</p>
+                    <p class="mt-3 text-base text-gray-600">Our tomatoes are the best around, guaranteed to make any burger or sandwich better. Or sprinkle a little salt on top and eat it straight like my grandmother always did. Yum.</p>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Awards Section -->
-    <section class="bg-teal-800">
-        <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
-          <div class="flex flex-wrap items-center mx-auto max-w-7xl">
-            <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
-              <div>
-                <div class="relative w-full max-w-lg">
-      
-                  <div class="relative">
-                    <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="img/best-of-the-best.png">
-                  </div>
+    <section class="bg-teal-800 px-4">
+      <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
+        <div class="flex flex-wrap items-center mx-auto max-w-7xl">
+          <div class="w-full lg:max-w-lg lg:w-1/3 rounded-xl">
+            <div>
+              <div class="relative w-full max-w-lg mx-auto">
+                <div class="relative">
+                  <img class="object-cover object-center mx-auto rounded-lg" alt="hero" src="img/best-of-the-best.png">
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-              <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-white md:text-7xl lg:text-5xl">Voted Chattanooga's Best Produce</h1>
+          </div>
+          <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-2/3 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+              <h1 class="mb-8 text-3xl sm:mx-auto font-bold font-serif leading-none text-white md:text-3xl lg:text-4xl">Voted Chattanooga's Best Produce</h1>
               <p class="mb-8 text-base leading-relaxed text-left text-white">We are honored to say Chattanoogan's have voted us the best produce 7 years in a row.</p>
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
     <!-- Locations Section -->
     <section>
       <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-        <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl sm:text-left md:text-center ">Our Locations</h1>
+        <p class="text-center text-sm font-bold uppercase tracking-widest text-teal-800 mb-4">Chattanooga Area</p>
+
+        <h1 class="mb-8 text-4xl pt-2 font-bold font-serif leading-none tracking-tighter text-slate-800 md:text-7xl lg:text-6xl text-center ">
+          Our Locations
+        </h1>
           <div class="grid w-full grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
             <div class="p-6">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.735929888548!2d-85.13205068491897!3d35.11330428033054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8860629ee03a2685%3A0x79264f3bb37c1b46!2sLinda&#39;s%20Produce!5e0!3m2!1sen!2sus!4v1660315211469!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <h1 class="mx-auto mb-8 text-2xl font-semibold mt-8 leading-none tracking-tighter text-neutral-600 lg:text-3xl">Highway 58  |  423-344-2600 </h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">
+              <iframe class="outline-double outline-gray-300 shadow-2xl hover:scale-105" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.735929888548!2d-85.13205068491897!3d35.11330428033054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8860629ee03a2685%3A0x79264f3bb37c1b46!2sLinda&#39;s%20Produce!5e0!3m2!1sen!2sus!4v1660315211469!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <h1 class="mx-auto mb-4 text-2xl font-semibold mt-8 pt-6 leading-none tracking-tighter text-slate-700 lg:text-3xl">Highway 58  |  423-344-2600 </h1>
+              <p class="mx-auto text-base leading-relaxed text-gray-600">
                 5900 TN-58 <br>
                 Harrison, TN 37341 <br><br>
                 <strong>Open everyday from 8am - 8pm</strong>
@@ -225,9 +228,9 @@
             </div>
             
             <div class="p-6">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.949396993027!2d-85.26854097845202!3d35.00797182672634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886067667cec0ea1%3A0x6b3661f3058a58bd!2sLinda&#39;s%20Fruit%20Stand!5e0!3m2!1sen!2sus!4v1660315298966!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h1 class="mx-auto mb-8 text-2xl font-semibold mt-8 leading-none tracking-tighter text-neutral-600 lg:text-3xl">East Ridge | 423-629-5317 </h1>
-                <p class="mx-auto text-base leading-relaxed text-gray-500">
+              <iframe class="outline-double outline-gray-300 shadow-2xl hover:scale-105" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.949396993027!2d-85.26854097845202!3d35.00797182672634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886067667cec0ea1%3A0x6b3661f3058a58bd!2sLinda&#39;s%20Fruit%20Stand!5e0!3m2!1sen!2sus!4v1660315298966!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h1 class="mx-auto mb-4 text-2xl font-semibold mt-8 pt-6 leading-none tracking-tighter text-slate-700 lg:text-3xl">East Ridge | 423-629-5317 </h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-600">
                   3306 Ringgold Rd <br>
                   East Ridge, TN 37412 <br>
                   <br>
@@ -239,56 +242,73 @@
     </section>
 
     <!-- Connect Section -->
-    <section class="bg-teal-800">
+    <section id="contact" class="bg-slate-200 px-2">
       <div class="relative items-center w-full px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
-        <h2 class="mb-12 underline underline-offset-8 decoration-slate-100 mt-4 text-3xl font-bold leading-none text-center tracking-tighter text-slate-100 md:text-4xl lg:text-5xl">Get In Touch</h2>
+        <h2 class="mb-12 underline underline-offset-8 decoration-slate-400 decoration-wavy mt-4 text-4xl font-bold font-serif text-center tracking-tight text-slate-800 md:text-4xl lg:text-5xl">Contact Us</h2>
         <div class="grid w-full grid-cols-1 gap-6 mx-auto md:grid-cols-2">
 
-        <!-- Column 1 --> 
-        <div class="mx-auto max-w-sm">
-          <p class="mx-auto text-xl leading-relaxed text-slate-200">Have a question or a comment? Just fill out the form and we'll get back to you promptly.
-            Don't forget to connect with us on social media to be the first to know about our seasonal offerings!</p>
-        </div>
+          <!-- Column 1 --> 
+          <div class="mx-auto max-w-sm">
+            <p class="mx-auto leading-relaxed text-slate-800">We'd love to hear from you! Have a question, comment, or need something we don't have? 
+              Just fill out the contact form and we'll get back to you promptly.<br><br>
+              Connect with us on social media to be the first to know about our seasonal offerings & don't forget to eat your veggies!</p>
+          </div>
 
-        <!-- Column 2 -->
-        <div class="flex flex-col flex-nowrap h-100 sm:w-full">     
-          <form  id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xlevejww" method="post">
-            <fieldset id="fs-frm-inputs">
-              <input type="text" class="form-input px-4 py-3 mb-4 rounded-lg w-full" name="name" id="full-name" placeholder="First and Last" required="">
-                <input type="email" class="form-input px-4 py-3 mb-4 rounded-lg w-full" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-                <textarea rows="5" name="message" class="form-textarea mb-4 rounded-lg w-full" id="message" placeholder="Add message here" required=""></textarea>
-                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            </fieldset>
-            <button type="submit" class="bg-teal-500 px-10 py-3 text-sm shadow-sm font-medium tracking-wider w-full text-white rounded-lg hover:shadow-2xl hover:bg-pink-600">SEND</button>
-          </form>         
-        </div>
-            
-      
-
-
-
-    
+          <!-- Column 2 -->
+          <div class="flex flex-col flex-nowrap h-100 sm:w-full">     
+            <form  id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xlevejww" method="post">
+              <fieldset id="fs-frm-inputs">
+                <input type="text" class="form-input px-4 py-3 mb-4 rounded-lg w-full" name="name" id="full-name" placeholder="First name" required="">
+                  <input type="email" class="form-input px-4 py-3 mb-4 rounded-lg w-full" name="_replyto" id="email-address" placeholder="Email address" required="">
+                  <textarea rows="5" name="message" class="form-textarea mb-4 py-3 px-4 rounded-lg w-full" id="message" placeholder="Add message here" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+              <button type="submit" class="bg-rose-500 px-10 py-3 text-sm shadow-sm font-medium tracking-wider w-full text-white rounded-lg hover:shadow-2xl hover:bg-amber-400">SEND</button>
+            </form>         
+          </div>
         </div>
       </div>
     </section>
 
-       <!-- Scroll To Top Button -->
+    <!-- Scroll To Top Button -->
 
-   <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="hidden fixed p-3 bg-amber-400 text-white font-medium text-xs leading-tight uppercase animate-bounce rounded-full shadow-md hover:bg-teal-800 hover:shadow-lg focus:bg-teal-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-500 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-8" id="btn-back-to-top">
-    <svg aria-hidden="true"  data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
-  </button>
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="hidden fixed p-3 bg-rose-500 text-white font-medium text-xs leading-tight uppercase animate-bounce rounded-full shadow-md hover:bg-amber-400 hover:shadow-lg focus:bg-rose-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-400 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-8" id="btn-back-to-top">
+      <svg aria-hidden="true"  data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+    </button>
+
+ 
 
     <!-- Footer -->
-    <footer class="bg-teal-800 p-8 text-center">
-      <a href="index.html" class="text-slate-100 tracking-relaxed font-semibold">Linda's Produce © 2022</a>
+    <footer class="bg-teal-800 px-8 pt-16 pb-4">
+      <div class="grid grid-cols-3 mx-auto justify-evenly max-w-2xl">
+        <div id="col-1" class="flex flex-col justify-self-center">
+          <h5 class="text-slate-100 text-sm md:text-lg font-serif font-semibold underline underline-offset-2 pb-2">Hwy 58</h5>
+            <p class="text-slate-100 text-sm md:text-lg leading-relaxed">HOURS: 8am - 8pm<br> 
+              Call Us! 423-344-2600
+            </p>
+        </div>
+        <div id="col-2" class="flex flex-col justify-self-center">
+            <h5 class="text-slate-100 text-sm md:text-lg font-serif font-semibold underline underline-offset-2 pb-2">Follow Us:</h5>
+            <svg role="img" class="stroke-slate-100 fill-slate-100 h-8 w-8 mx-auto mt-2 hover:stroke-rose-500 hover:fill-rose-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+       
+        <div id="col-3" class="flex flex-col justify-self-center">
+          <h5 class="text-slate-100 text-sm md:text-lg font-serif font-semibold underline underline-offset-2 pb-2">East Ridge</h5>
+            <p class="text-slate-100 text-sm md:text-lg leading-relaxed">
+              HOURS: 7am - 7:30pm<br>
+              Call Us! 423-629-5317
+            </p>
+        </div>
+      </div>
+
+      <div class="text-center pt-12">
+        <a href="index.html" class="text-slate-100 text-sm tracking-relaxed font-semibold font-serif">Linda's Produce © 2022</a>
+      </div>
     </footer>
-  
-    
     <!-- /Footer -->
   
-  
 
-<script src="main.js"></script>
+    <script src="main.js"></script>
 
-</body>
+  </body>
 </html>
