@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Linda's Produce</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
   </head>
 
-  <body id="container">
+  <body>
     <!-- Header & Navigation -->
     <div class="absolute w-full bg-slate-100 pb-4">
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl py-2 px-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -31,7 +31,7 @@
                   <a class="block p-5 hover:underline hover:underline-offset-4 decoration-double decoration-amber-500" href="src/about.html">About</a>
                 </li> 
                 <li> 
-                  <a class="block p-5 hover:underline hover:underline-offset-4 decoration-double decoration-amber-500" href="#contact">Contact</a>
+                  <a class="block p-5 hover:underline hover:underline-offset-4 decoration-double decoration-amber-500" href="src/contact.html">Contact</a>
                 </li> 
                 <li class="relative"> 
                   <div class="">
@@ -64,7 +64,7 @@
             <div>
               <div class=" w-full">    
                 <div class="">
-                  <img class="mx-auto rounded-lg" alt="hero" src="img/7.png">
+                  <img class="mx-auto rounded-lg" alt="hero" src="src/img/7.png">
                 </div>
               </div>
             </div>
@@ -105,79 +105,67 @@
           <div class="grid max-w-lg gap-6 mx-auto lg:grid-cols-3 lg:max-w-none">
             <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
               <div class="shrink">
-                <img class="object-cover w-full h-48 " src="img/watermelon.jpg" alt="watermelons">
+                <img class="object-cover w-full h-48 " src="src/img/watermelon.jpg" alt="watermelons">
               </div>
               <div class="flex flex-col justify-between flex-1 p-6 bg-white focus:ring-2 focus:ring-teal-700">
                 <div class="flex-1 ">
-                  <a href="#" class="block mt-2">
                     <p class="text-xl font-semibold font-serif text-slate-800">Juicy Watermelons</p>
                     <p class="mt-3 text-base text-gray-600 ">Nothing says summer like cracking open a giant watermelon and tasting that sweet juicy red center on a hot & sweaty day.</p>
-                  </a>
                 </div>
               </div>
             </div>
             <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
               <div class="flex-shrink-0">
-                <img class="object-cover w-full h-48" src="img/homegrown-strawberries.jpeg" alt="strawberries">
+                <img class="object-cover w-full h-48" src="src/img/homegrown-strawberries.jpeg" alt="strawberries">
               </div>
               <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                 <div class="flex-1">
-                  <a href="https://twitter.com/g_perales" class="block mt-2">
                     <p class="text-xl font-semibold font-serif text-slate-800">Homegrown Strawberries</p>
                     <p class="mt-3 text-base text-gray-600">Plump & Juicy strawberries just perfect for eating, dipping, or adding to that fluffy shortcake with some cool whip on top.</p>
-                  </a>
                 </div>
               </div>
             </div>
             <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
               <div class="flex-shrink-0">
-                <img class="object-cover w-full h-48" src="img/homegrown-produce.jpg" alt="produce">
+                <img class="object-cover w-full h-48" src="src/img/homegrown-produce.jpg" alt="produce">
               </div>
               <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                 <div class="flex-1">
-                  <a href="#" class="block mt-2">
                     <p class="text-xl font-semibold font-serif text-slate-800">Local Produce</p>
                     <p class="mt-3 text-base text-gray-600">Our produce is fresh and grown locally so you know you are getting the best quality right to your table.</p>
-                  </a>
                 </div>
               </div>
             </div>
             <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
               <div class="flex-shrink-0">
-                <img class="object-cover w-full h-48" src="img/fresh-flowers.jpg" alt="flowers">
+                <img class="object-cover w-full h-48" src="src/img/fresh-flowers.jpg" alt="flowers">
               </div>
               <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                 <div class="flex-1">
-                  <a href="https://twitter.com/g_perales" class="block mt-2">
                     <p class="text-xl font-semibold font-serif text-slate-800">Fresh Flowers</p>
                     <p class="mt-3 text-base text-gray-600">While you are getting some yummy produce, why not pick up some beautiful and always fresh flowers? They are sure to brighten up your kitchen and your mood.</p>
-                  </a>
                 </div>
               </div>
             </div>
             <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
               <div class="flex-shrink-0">
-                <img class="object-cover w-full h-48" src="img/fall-apples.jpg" alt="apples">
+                <img class="object-cover w-full h-48" src="src/img/fall-apples.jpg" alt="apples">
               </div>
               <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                 <div class="flex-1">
-                  <a href="https://twitter.com/g_perales" class="block mt-2">
                     <p class="text-xl font-semibold font-serif text-slate-800">Fall Apples</p>
                     <p class="mt-3 text-base text-gray-600">Once the weather starts to cool down, don't forget to stop by and pick up some deliciously crisp fall apples. Applie pie anyone?</p>
-                  </a>
                 </div>
               </div>
             </div>
             <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:scale-105">
               <div class="flex-shrink-0">
-                <img class="object-cover w-full h-48" src="img/tomatos.jpg" alt="apples">
+                <img class="object-cover w-full h-48" src="src/img/tomatos.jpg" alt="apples">
               </div>
               <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                 <div class="flex-1">
-                  <a href="https://twitter.com/g_perales" class="block mt-2">
                     <p class="text-xl font-semibold font-serif text-slate-800">Vibrant Tomatoes</p>
                     <p class="mt-3 text-base text-gray-600">Our tomatoes are the best around, guaranteed to make any burger or sandwich better. Or sprinkle a little salt on top and eat it straight like my grandmother always did. Yum.</p>
-                  </a>
                 </div>
               </div>
             </div>
@@ -192,9 +180,9 @@
         <div class="flex flex-wrap items-center mx-auto max-w-7xl">
           <div class="w-full lg:max-w-lg lg:w-1/3 rounded-xl">
             <div>
-              <div class=" w-full max-w-lg mx-auto">
-                <div class="">
-                  <img class="object-cover object-center mx-auto rounded-lg" alt="hero" src="img/best-of-the-best.png">
+              <div class="w-full max-w-lg mx-auto">
+                <div>
+                  <img class="object-cover object-center mx-auto rounded-lg" alt="hero" src="src/img/best-of-the-best-min.png">
                 </div>
               </div>
             </div>
@@ -217,6 +205,7 @@
           Our Locations
         </h1>
           <div class="grid w-full grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
+            <!-- HWY 58 Location -->
             <div class="p-6">
               <iframe class="outline-double outline-gray-300 shadow-2xl hover:scale-105" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.735929888548!2d-85.13205068491897!3d35.11330428033054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8860629ee03a2685%3A0x79264f3bb37c1b46!2sLinda&#39;s%20Produce!5e0!3m2!1sen!2sus!4v1660315211469!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               <h1 class="mx-auto mb-4 text-2xl font-semibold mt-8 pt-6 leading-none tracking-tighter text-slate-700 lg:text-3xl">Highway 58  |  423-344-2600 </h1>
@@ -226,7 +215,7 @@
                 <strong>Open everyday from 8am - 8pm</strong>
               </p>
             </div>
-            
+            <!-- East Ridge Location -->
             <div class="p-6">
               <iframe class="outline-double outline-gray-300 shadow-2xl hover:scale-105" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.949396993027!2d-85.26854097845202!3d35.00797182672634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886067667cec0ea1%3A0x6b3661f3058a58bd!2sLinda&#39;s%20Fruit%20Stand!5e0!3m2!1sen!2sus!4v1660315298966!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <h1 class="mx-auto mb-4 text-2xl font-semibold mt-8 pt-6 leading-none tracking-tighter text-slate-700 lg:text-3xl">East Ridge | 423-629-5317 </h1>
@@ -281,18 +270,22 @@
     <!-- Footer -->
     <footer class="bg-teal-800 px-8 pt-16 pb-4">
       <div class="grid grid-cols-3 mx-auto justify-evenly max-w-2xl">
-        <div id="col-1" class="flex flex-col justify-self-center">
+        <!-- Column 1 -->
+        <div class="flex flex-col justify-self-center">
           <h5 class="text-slate-100 text-sm md:text-lg font-serif font-semibold underline underline-offset-2 pb-2">Hwy 58</h5>
             <p class="text-slate-100 text-sm md:text-lg leading-relaxed">HOURS: 8am - 8pm<br> 
               Call Us! 423-344-2600
             </p>
         </div>
-        <div id="col-2" class="flex flex-col justify-self-center">
+        <!-- Column 2 -->
+        <div class="flex flex-col justify-self-center">
+          <a href="https://www.facebook.com/lindasproduce">
             <h5 class="text-slate-100 text-sm md:text-lg font-serif font-semibold underline underline-offset-2 pb-2">Follow Us:</h5>
-            <svg role="img" class="stroke-slate-100 fill-slate-100 h-8 w-8 mx-auto mt-2 hover:stroke-rose-500 hover:fill-rose-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <svg role="img" class="stroke-slate-100 fill-slate-100 h-8 w-8 mx-auto hover:stroke-rose-500 hover:fill-rose-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a> 
         </div>
-       
-        <div id="col-3" class="flex flex-col justify-self-center">
+       <!-- Column 3 -->
+        <div class="flex flex-col justify-self-center">
           <h5 class="text-slate-100 text-sm md:text-lg font-serif font-semibold underline underline-offset-2 pb-2">East Ridge</h5>
             <p class="text-slate-100 text-sm md:text-lg leading-relaxed">
               HOURS: 7am - 7:30pm<br>
@@ -308,7 +301,7 @@
     <!-- /Footer -->
   
 
-    <script src="main.js"></script>
+    <script src="src/main.js"></script>
 
   </body>
 </html>
